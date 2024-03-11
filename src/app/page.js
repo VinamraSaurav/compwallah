@@ -4,7 +4,7 @@ import ContactUs from "@/components/ContactUs";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import Whyus from "@/components/Whyus";
-import Footer from "@/components/footer";
+import Footer from "@/components/Footer";
 import Image from "next/image";
 
 export default function Home() {
