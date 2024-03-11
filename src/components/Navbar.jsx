@@ -52,7 +52,7 @@ const Navbar = () => {
 
         </div>
         {
-           <div className={`fixed h-[100vh] top-16 w-[50%] flex justify-center bg-black/90 z-10 items-center text-center ${open?'right-0':'right-[-800px]'} transition-all duration-300 ease-in`}>
+           <div className={`fixed h-[100vh] top-16 w-[50%] flex justify-center bg-black/90 z-10 items-center text-center ${open?'right-0':'right-[-800px] hidden'} transition-all duration-300 ease-in`}>
                 <div>
                 <Link href='/'><div className='p-2 px-3 text-white hover:bg-primary rounded-lg hover:cursor-pointer font-bold' onClick={() => { window.scrollTo({ top: 0, behavior: 'smooth' }); handleClick() }}>Home</div></Link>
                     <Link href='/'><div className='p-2 px-3 text-white hover:bg-primary rounded-md hover:cursor-pointer font-bold' onClick={() => { window.scrollTo({ top: 600, behavior: 'smooth' }); handleClick() }}>About</div></Link>
