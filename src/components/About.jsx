@@ -28,7 +28,7 @@ const About = () => {
           quality, and customer satisfaction, we strive to be your trusted
           technology partner.
         </div>
-        <div className="flex md:justify-between my-6 px-6 py-3 bg-primary rounded-lg text-white ">
+        <div className="flex md:justify-between my-6 px-6 py-3 bg-gradient-card rounded-lg text-white ">
             <div className="flex items-center gap-3">
             <FaGears className="text-3xl"/>
             <div>

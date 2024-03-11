@@ -10,8 +10,8 @@ const Hero = () => {
         <div className='md:m-10 m-5 text-xl md:text-5xl font-bold text-primary font-theboldfont md:w-6/12'>
             <div className='flex flex-col items-center'>
             <div>
-            <div className='flex md:justify-start justify-center md:ml-5'>You Run Your Business.</div>
-            <div className='flex md:justify-start justify-center md:ml-5'>We Run Your IT.</div>
+            <div className='flex md:justify-start justify-center md:ml-5 text-transparent bg-gradient-card bg-clip-text'>You Run Your Business.</div>
+            <div className='flex md:justify-start justify-center md:ml-5 text-transparent bg-gradient-card bg-clip-text'>We Run Your IT.</div>
             <Link href='#services'><div className='px-4 py-2 my-6 bg-primary text-white text-2xl rounded-lg w-[190px] mx-auto md:mx-0 md:ml-5'>Our Services</div></Link>
             </div>
             </div>

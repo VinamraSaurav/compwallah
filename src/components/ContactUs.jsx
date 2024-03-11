@@ -3,9 +3,12 @@ import React from "react";
 import { useFormik } from "formik";
 import * as yup from "yup";
 import { useForm, ValidationError } from '@formspree/react';
+// import { useToast } from "@/components/ui/use-toast"
+import {toast,Toaster} from "react-hot-toast";
 
 const ContactUs = () => {
     const [state, handleSubmit] = useForm("mayrbppq");
+    // const { toast } = useToast()
     
     
   const initialValues = {
@@ -32,9 +35,9 @@ const ContactUs = () => {
     validationSchema,
   });
 
-  if (state.succeeded) {
-    return <p>Thanks for joining!</p>;
-}
+//   if (state.succeeded) {
+//     return <p>Thanks for joining!</p>;
+// }
 
 
   return (
@@ -114,11 +117,15 @@ const ContactUs = () => {
             <button
               type="submit"
               disabled={state.submitting}
-              className="submit-btn w-[150px] p-2 my-2 mx-auto rounded-md text-bold px-4 bg-primary/85 hover:bg-primary text-white flex  justify-items-center mb-10 "
-            >
+              className="submit-btn w-[150px] p-2 my-2 mx-auto rounded-md text-bold px-4 bg-primary font-bold mt-5 hover:bg-gradient-card text-white flex  justify-items-center mb-10 "
+              onClick={()=>toast.success("Message Sent")}>
+              
               Send Message
             </button>
           </form>
+          {
+             <Toaster/>
+          }
         </div>
       </div>
     </div>
